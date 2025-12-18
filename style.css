@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Cairo", Tahoma, Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #000000, #1a1a1a);
+    color: #fff;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffc400;
+}
+
+header p {
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+/* Filters */
+.filters {
+    background: #ffffff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.filters select {
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+/* Products Grid */
+.products {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.product h3 {
+    font-size: 17px;
+    margin: 10px;
+    color: #000;
+}
+
+.product p {
+    margin: 0 10px 8px;
+    font-size: 14px;
+}
+
+.product p:nth-of-type(1) {
+    color: #666;
+}
+
+.product p:nth-of-type(2) {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Button */
+.product button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background: #ffc400;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product button:hover {
+    background: #e0ad00;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
